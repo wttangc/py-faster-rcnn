@@ -1,0 +1,16 @@
+<annotation>
+	<folder>bread</folder>
+	<filename>$filename</filename>
+	<source>
+		<database>Bread Database</database>
+		<annotation>IHPC</annotation>
+		<image>bread-shop</image>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<background>$back_filename</background>
+	<lumascale>$lumascale</lumascale>

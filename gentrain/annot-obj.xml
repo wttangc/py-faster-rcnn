@@ -1,0 +1,13 @@
+	<object>
+		<name>$category</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>$xmin</xmin>
+			<ymin>$ymin</ymin>
+			<xmax>$xmax</xmax>
+			<ymax>$ymax</ymax>
+		</bndbox>
+		<src>$srcfilename</src>
+	</object>
