@@ -1,0 +1,1 @@
+python tools/test_net.py --def models/bread/test.prototxt --net output/faster_rcnn_end2end/trainmult/vgg16_faster_rcnn_iter_10000.caffemodel --cfg experiments/cfgs/faster_rcnn_end2end.yml --imdb bread_trainmult --num_dets 300
