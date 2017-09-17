@@ -9,9 +9,14 @@
 
 __sets = {}
 
+from datasets.bread import bread
 from datasets.pascal_voc import pascal_voc
 from datasets.coco import coco
 import numpy as np
+
+for split in ['trainmult', 'test']:
+    name = 'bread_{}'.format(split)
+    __sets[name] = (lambda split=split: bread(split))
 
 # Set up voc_<year>_<split> using selective search "fast" mode
 for year in ['2007', '2012']:

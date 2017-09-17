@@ -35,10 +35,10 @@ __C.TRAIN = edict()
 
 # Scales to use during training (can list multiple scales)
 # Each scale is the pixel size of an image's shortest side
-__C.TRAIN.SCALES = (600,)
+__C.TRAIN.SCALES = (300,)
 
 # Max pixel size of the longest side of a scaled input image
-__C.TRAIN.MAX_SIZE = 1000
+__C.TRAIN.MAX_SIZE = 500
 
 # Images to use per minibatch
 __C.TRAIN.IMS_PER_BATCH = 2
@@ -68,7 +68,7 @@ __C.TRAIN.BBOX_REG = True
 __C.TRAIN.BBOX_THRESH = 0.5
 
 # Iterations between snapshots
-__C.TRAIN.SNAPSHOT_ITERS = 10000
+__C.TRAIN.SNAPSHOT_ITERS = 5000
 
 # solver.prototxt specifies the snapshot path prefix, this adds an optional
 # infix to yield the path: <prefix>[_<infix>]_iters_XYZ.caffemodel
@@ -132,10 +132,10 @@ __C.TEST = edict()
 
 # Scales to use during testing (can list multiple scales)
 # Each scale is the pixel size of an image's shortest side
-__C.TEST.SCALES = (600,)
+__C.TEST.SCALES = (300,)
 
 # Max pixel size of the longest side of a scaled input image
-__C.TEST.MAX_SIZE = 1000
+__C.TEST.MAX_SIZE = 500
 
 # Overlap threshold used for non-maximum suppression (suppress boxes with
 # IoU >= this threshold)
@@ -157,7 +157,7 @@ __C.TEST.PROPOSAL_METHOD = 'selective_search'
 ## NMS threshold used on RPN proposals
 __C.TEST.RPN_NMS_THRESH = 0.7
 ## Number of top scoring boxes to keep before apply NMS to RPN proposals
-__C.TEST.RPN_PRE_NMS_TOP_N = 6000
+__C.TEST.RPN_PRE_NMS_TOP_N = 3000
 ## Number of top scoring boxes to keep after applying NMS to RPN proposals
 __C.TEST.RPN_POST_NMS_TOP_N = 300
 # Proposal height and width both need to be greater than RPN_MIN_SIZE (at orig image scale)
